@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/choose_serialPort_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@+string/chooseserialPort" />
+
+    <Spinner
+        android:id="@+id/choose_seriaPort_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" >
+    </Spinner>
+
+    <TextView
+        android:id="@+id/choose_baudRate_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+string/choosebaudRate" />
+
+    <Spinner
+        android:id="@+id/choose_baudRate_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" >
+    </Spinner>
+
+
+         <TextView
+          android:id="@+id/commucation_window"
+          android:layout_width="fill_parent"
+          android:layout_height="190dp" >
+         </TextView>
+    <EditText
+        android:id="@+id/editmsg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="edit here" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+		<Button 
+		    android:id="@+id/connectSerialPortButton"
+		    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="打开串口"
+		    ></Button>
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="发送数据" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="关闭串口" />
+         <Button
+            android:id="@+id/listenSerialPortButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="监听串口输入" />
+          <Button
+            android:id="@+id/stopListenSerialPortButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="停止监听串口" />
+    </LinearLayout>
+
+</LinearLayout>

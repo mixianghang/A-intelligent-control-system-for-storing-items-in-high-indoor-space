@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@+id/ScrollView" android:layout_width="fill_parent"  
+    	android:layout_height="fill_parent" android:scrollbars="vertical"> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:weightSum="5">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+  <ImageView
+      android:id="@+id/goodsImageView"
+      android:layout_width="120dp"
+      android:layout_height="100dp"
+      android:layout_gravity="center"
+      android:layout_weight="1"
+      android:src="@drawable/goods"
+      android:tag="get it" android:padding="0dp"/>
+        <EditText
+            android:id="@+id/goodsNameEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:hint="@string/goods_name" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_weight="1"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/goods_type"
+             android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/goodsTypeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_weight="1"
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+             android:gravity="center"
+            android:text="@string/store_location"
+             android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/storeLocationSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+         android:layout_weight="1"
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/quality_time"
+             android:textColor="#000000"
+            android:textSize="20sp"/>
+        
+        <Spinner
+            android:id="@+id/qualityTimeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+        <LinearLayout
+         android:layout_weight="1"
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="8" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/product_time"
+            android:textColor="#000000"
+            android:textSize="20sp" 
+            android:layout_weight="2"/>
+
+        <Spinner
+            android:id="@+id/yearOfProductTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2" />
+        
+
+
+        <Spinner
+            android:id="@+id/monthOfProductTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+
+        <Spinner
+            android:id="@+id/dayOfProductTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+        </LinearLayout>
+        
+        
+
+</LinearLayout>
+</ScrollView>

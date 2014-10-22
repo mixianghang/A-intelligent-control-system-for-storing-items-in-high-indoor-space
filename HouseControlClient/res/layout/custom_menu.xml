@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/background"
+    android:layout_width="fill_parent"
+    android:layout_height="144px"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:visibility="gone"
+  	android:id="@+id/lines">
+  	<LinearLayout android:orientation="horizontal" 
+  	android:background="@drawable/background"
+  	android:gravity="center" 
+  	android:layout_width="fill_parent"
+    android:layout_height="72px"
+  	>
+    <ImageButton
+    	android:layout_marginLeft="8dip" 
+    	android:id="@+id/menu_btn_index"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/select"
+    	/>
+    	
+     <ImageButton
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/food"
+    	android:id="@+id/menu_btn_news"
+    	/>
+    	
+     <ImageButton
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/drink"
+    	android:id="@+id/menu_btn_lib"
+    	/>
+    	 <ImageButton
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/file"
+    	android:id="@+id/menu_btn_add"
+    	/>
+    	
+    <ImageButton
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/food"
+    	android:id="@+id/menu_btn_set"
+    	/>
+    
+    </LinearLayout>
+    
+    <LinearLayout android:orientation="horizontal" android:gravity="center"
+    	android:layout_width="fill_parent"
+    	android:layout_height="72px">
+    <ImageButton
+    	android:layout_marginLeft="8dip" 
+    	android:id="@+id/menu_btn_index"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/drink"
+    	/>
+    	
+     <ImageButton
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/drink"
+    	android:id="@+id/menu_btn_news"
+    	/>
+    	
+     <ImageButton
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/food"
+    	android:id="@+id/menu_btn_lib"
+    	/>
+    	
+     <ImageButton
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/file"
+    	android:id="@+id/menu_btn_add"
+    	/>
+    	
+    <ImageButton
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/food"
+    	android:id="@+id/menu_btn_quit"
+    	/>
+    </LinearLayout>    	
+</LinearLayout>
+

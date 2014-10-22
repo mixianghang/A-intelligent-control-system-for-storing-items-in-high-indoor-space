@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/userNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5" >
+
+            <Button
+                android:id="@+id/logInButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logIn" 
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/editUserInfoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/editUserInfo" 
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/forgetPasswordButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgetPassword"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/quitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quit"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+		  <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:weightSum="5">
+
+		      <Button
+		          android:id="@+id/editPasswordButton"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="@string/editPassword"
+		          android:layout_weight="1" />
+
+		      <Button
+		          android:id="@+id/searchButton"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="@string/search" 
+		          android:layout_weight="1"/>
+
+		      <Button
+		          android:id="@+id/addGoodsButton"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="@string/addGoods"
+		          android:layout_weight="1" />
+
+		      <Button
+		          android:id="@+id/settingButton"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="@string/setting" 
+		          android:layout_weight="1"/>
+
+		      <Button
+		          android:id="@+id/takeGoodsButton"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="@string/takeGoods" 
+		          android:layout_weight="1"/>
+
+    </LinearLayout>
+            
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">"
+  
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/yourGoods" />
+       
+        
+
+    </LinearLayout>
+    <ListView
+            android:id="@+id/goodsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </ListView>
+
+</LinearLayout>

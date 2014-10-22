@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3">"
+    	<Button
+        android:id="@+id/enableBlueToothButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启蓝牙" 
+        android:layout_weight="1"/>
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/discoverableTime"
+            android:hint="设备可见时间限制"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="4"
+            >
+
+ 
+        </EditText>
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/enableDiscoverableButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开启可见" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/scanBlueToothButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜寻蓝牙设备" />
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1"
+>
+            <TextView
+                android:id="@+id/pairedDeviceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="已经配对的设备" 
+                android:textColor="#000000"/>
+			
+
+
+
+            <ListView
+                            android:fadingEdge="none"  
+              android:scrollingCache="false"
+                android:id="@+id/pairedDeiviceList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">"
+
+            </ListView>
+           </LinearLayout>
+       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1"
+   >
+                <TextView
+                android:id="@+id/newFoundDeviceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:textColor="#000000"
+                android:text="新发现的设备" />
+
+              <ListView
+                              android:fadingEdge="none"  
+              android:scrollingCache="false"
+                  android:id="@+id/newFoundDeiviceList"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">"
+
+            </ListView>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
